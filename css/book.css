@@ -1,0 +1,182 @@
+.book{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+#background {
+	position: absolute;
+	left: 450px;
+	top: 0px;
+	z-index: auto;
+}
+
+#img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+}
+
+#v{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	animation: kurt_fade 2s;
+
+}
+
+#corner {
+	position: fixed;
+	left: 457px;
+	bottom: 145px;
+}
+
+@keyframes slide {
+	0% {top: 0px; left: 600px;}
+	100% {top: 0px; left:0px;}
+}
+
+@keyframes slid {
+	0% {top: 0px; left: -600px;}
+	100% {top: 0px; left:0px;}
+}
+
+#line1{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: slide 0.5s;
+	animation-delay: 0s;
+}
+
+#line2{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: slid 0.5s;
+	animation-delay: 1s;
+}
+
+#line3{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: slide 0.5s;
+	animation-delay: 1.5s;
+}
+
+#line4{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	animation: slid 0.5s;
+	animation-delay: 2s;
+}
+
+@keyframes bounce {
+  from {
+    top: 100px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+       
+/* Title */
+
+.kurt {
+	font-family: Eagle;
+	font-size: 30px;
+	letter-spacing: 20px;
+	text-align: center;
+	left: 634px;
+	top: 175px;
+	color: #9ECBD9;
+	position: absolute;
+	z-index: 200;
+	animation: fade 3s;
+}
+
+@keyframes fade {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.vonnegut {
+	font-family: Eagle;
+	font-size: 30px;
+	letter-spacing: 20px;
+	text-align: center;
+	left: 550px;
+	top: 223px;
+	color: #9ECBD9;
+	position: absolute;
+	z-index: 200;
+	animation: fade 3s;
+}
+
+.cat {
+	font-family: Eagle;
+	font-size: 29px;
+	letter-spacing: 15px;
+	text-align: center;
+	left: 636px;
+	top: 301px;
+	color: #E1752B;
+	position: absolute;
+	z-index: 200;
+}
+
+.cradle {
+	font-family: Eagle;
+	font-size: 29px;
+	letter-spacing: 17px;
+	text-align: center;
+	left: 605px;
+	top: 353px;
+	color: #E1752B;
+	position: absolute;
+	z-index: 200;
+}
+
+
+.text {
+	font-family: Eagle;
+	font-size: 6.5px;
+	letter-spacing: 3px;
+	text-align: center;
+	left: 617px;
+	top: 440px;
+	color: black;
+	position: absolute;
+	z-index: 200;
+}
+
+.nyt {
+	font-family: Futura;
+	font-weight: 20;
+	font-style: italic;
+	font-size: 6px;
+	letter-spacing: 4px;
+	text-align: center;
+	left: 642px;
+	top: 468px;
+	color: black;
+	position: absolute;
+	z-index: 200;
+}

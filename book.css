@@ -1,0 +1,286 @@
+/*
+.clip{
+	position: absolute;
+	width: 400px;
+	height: 600px;
+	overflow: hidden;
+	border: solid 1px red;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -2;
+
+}
+*/
+
+.test {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.book{
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	background: #E593A7;
+}
+
+#background {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: auto;
+	overflow: hidden;
+}
+
+@keyframes fadein {
+	0% {opacity: 0}
+	25% {opacity: 100;}
+	50% {opacity: 100;}
+	75% {opacity: 100;}
+	100% {opacity: 0;}
+}
+
+#img{
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+	animation: fadein 4s infinite ease-in-out;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes down {
+	0% {top: -600px; left: 0px;}
+	25% {top: 0px; left: 0px;}
+	50% {top: 0px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	100% {top: 1000px; left: 0px;}
+}
+
+.v{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	animation: down 4s infinite ease-in-out;
+	animation-fill-mode: backwards;
+	animation-delay: 1s;
+
+}
+
+.corner {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	animation: fadein 4s infinite ease-in-out;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+
+@keyframes l {
+	0% {top: 0px; left: -1000px;}
+	25% {top: 0px; left: 0px;} 
+	50% {top: 0px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	100% {top: 0px; left:1000px;}
+}
+
+
+
+
+/*
+.div:hover {
+  animation-play-state: paused;
+}
+*/
+
+@keyframes r {
+	0% {top: 0px; left: -1000px;}
+	25% {top: 0px; left: 0px;}
+	50% {top: 0px; left: 0px;}
+	75% {top: 0px; left: 0px;}
+	100% {top: 0px; left: 1000px;}
+}
+
+
+.line1{
+	position: absolute;
+	animation: r 4s infinite;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+.line2{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: l 4s infinite;
+	animation-delay: 1.2s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+.line3{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: r 4s infinite;
+	animation-delay: 1.4s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+.line4{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	animation: l 4s infinite;
+	animation-delay: 1.6s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+/*
+@keyframes bounce {
+  from {
+    top: 100px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+ 
+Title */
+@keyframes fade {
+	0% { opacity: 0; }
+	25% { opacity: 1; }
+	50% { opacity: 1; }
+	75% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.kurt {
+	font-family: Eagle;
+	font-size: 30px;
+	letter-spacing: 20px;
+	text-align: center;
+	width: 100%;
+	left: 0px;
+	top: 160px;
+	color: #9ECBD9;
+	position: absolute;
+	z-index: 200;
+	animation: fade 4s infinite ease-in-out;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+.vonnegut {
+	font-family: Eagle;
+	font-size: 30px;
+	letter-spacing: 20px;
+	text-align: center;
+	text-indent: 25px;
+	width: 100%;
+	left: 0px;
+	top: 208px;
+	color: #9ECBD9;
+	position: absolute;
+	z-index: 200;
+	animation: fade 4s infinite ease-in-out;
+	animation-delay: 1.2s;
+	animation-fill-mode: backwards;
+}
+
+.cat {
+	font-family: Eagle;
+	font-size: 29px;
+	letter-spacing: 15px;
+	text-align: center;
+	width: 100%;
+	left: 0px;
+	top: 286px;
+	color: #E1752B;
+	position: absolute;
+	z-index: 200;
+	animation: fade 4s infinite ease-in-out;
+	animation-delay: 1.4s;
+	animation-fill-mode: backwards;
+}
+
+.cradle {
+	font-family: Eagle;
+	font-size: 29px;
+	letter-spacing: 17px;
+	text-align: center;
+	width: 100%;
+	left: 0px;
+	top: 338px;
+	color: #E1752B;
+	position: absolute;
+	z-index: 200;
+	animation: fade 4s infinite ease-in-out;
+	animation-delay: 1.6s;
+	animation-fill-mode: backwards;
+}
+
+
+.text {
+	font-family: Eagle;
+	font-size: 6.5px;
+	letter-spacing: 3px;
+	text-align: center;
+	width: 100%;
+	left: 0px;
+	top: 440px;
+	color: black;
+	position: absolute;
+	z-index: 200;
+	opacity: 0.2;
+}
+
+.nyt {
+	font-family: Futura;
+	font-weight: 20;
+	font-style: italic;
+	font-size: 6px;
+	letter-spacing: 4px;
+	text-align: center;
+	left: 642px;
+	top: 468px;
+	color: black;
+	position: absolute;
+	z-index: 200;
+	opacity: 0.2;
+}
+
+.text:hover {
+	opacity:1 ;
+
+}
+
+.nyt:hover {
+	opacity:1;
+}
